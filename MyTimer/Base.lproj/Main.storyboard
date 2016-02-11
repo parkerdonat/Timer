@@ -183,9 +183,68 @@
                     <view key="view" contentMode="scaleToFill" id="ZKn-BE-cym">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="p2N-Yr-i84">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0PK-zn-OK6">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="265"/>
+                                        <color key="backgroundColor" red="0.2247350726" green="0.90060763889999995" blue="0.50196022039999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="476839329.21151203">
+                                            <!--2016-02-10 23:22:09 +0000-->
+                                        </date>
+                                    </datePicker>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sj8-Rl-P4g">
+                                        <rect key="frame" x="0.0" y="265" width="600" height="44.5"/>
+                                        <color key="backgroundColor" red="0.2247350726" green="0.90060763889999995" blue="0.50196022039999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your alarm is not set" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6l-Gg-QdD">
+                                        <rect key="frame" x="0.0" y="309.5" width="600" height="44.5"/>
+                                        <color key="backgroundColor" red="0.2247350726" green="0.90060763889999995" blue="0.50196022039999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tr-i0-Puq">
+                                        <rect key="frame" x="0.0" y="354" width="600" height="44.5"/>
+                                        <color key="backgroundColor" red="0.2247350726" green="0.90060763889999995" blue="0.50196022039999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1J-fo-GNG">
+                                        <rect key="frame" x="0.0" y="398.5" width="600" height="88.5"/>
+                                        <color key="backgroundColor" red="0.2247350726" green="0.90060763889999995" blue="0.50196022039999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Set Alarm"/>
+                                        <connections>
+                                            <action selector="alarmButtonTapped:" destination="CEm-EK-ldb" eventType="touchUpInside" id="L6N-NA-9Aw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.2247350726" green="0.90060763889999995" blue="0.50196022039999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="sj8-Rl-P4g" firstAttribute="height" secondItem="I6l-Gg-QdD" secondAttribute="height" id="6Ry-ZA-YzC"/>
+                                    <constraint firstItem="n1J-fo-GNG" firstAttribute="height" secondItem="0PK-zn-OK6" secondAttribute="height" multiplier="1/3" id="NE2-O0-Mgb"/>
+                                    <constraint firstItem="1tr-i0-Puq" firstAttribute="height" secondItem="n1J-fo-GNG" secondAttribute="height" multiplier="1/2" id="Wr1-qe-gp6"/>
+                                    <constraint firstItem="I6l-Gg-QdD" firstAttribute="height" secondItem="1tr-i0-Puq" secondAttribute="height" id="e3R-jH-KEe"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2247350726" green="0.90060763889999995" blue="0.50196022039999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="p2N-Yr-i84" firstAttribute="top" secondItem="pKS-87-Jh5" secondAttribute="bottom" id="Yns-q6-pkV"/>
+                            <constraint firstAttribute="trailing" secondItem="p2N-Yr-i84" secondAttribute="trailing" id="f4i-L7-Aah"/>
+                            <constraint firstItem="p2N-Yr-i84" firstAttribute="bottom" secondItem="0E6-D6-zVd" secondAttribute="top" id="omV-B6-jMB"/>
+                            <constraint firstItem="p2N-Yr-i84" firstAttribute="leading" secondItem="ZKn-BE-cym" secondAttribute="leading" id="zHV-k0-Bm8"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="11D-lZ-ZsP"/>
+                    <connections>
+                        <outlet property="alarmButton" destination="n1J-fo-GNG" id="Wfr-yF-PNW"/>
+                        <outlet property="datePickerView" destination="0PK-zn-OK6" id="LCE-9J-llt"/>
+                        <outlet property="notificationLabel" destination="I6l-Gg-QdD" id="BK6-Dx-DQR"/>
+                        <outlet property="timeConfirmationLabel" destination="1tr-i0-Puq" id="bZI-b5-FRu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vsE-UK-CNi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

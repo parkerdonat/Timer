@@ -116,7 +116,11 @@ class TimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     }
     
     func timerComplete() {
-        switchToPickerView()
+        let timerCompleteAlert = UIAlertController(title: "Timer Complete!", message: nil, preferredStyle: .Alert)
+        timerCompleteAlert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
+            self.switchToPickerView()
+        }))
+        presentViewController(timerCompleteAlert, animated: true, completion: nil)
     }
     
     func switchToTimerView() {
