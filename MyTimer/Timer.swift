@@ -25,6 +25,7 @@ class Timer: NSObject {
             }
         }
     }
+    var isPaused: Bool = false
     var string: String {
         get {
             let totalSeconds = Int(self.seconds)
@@ -75,11 +76,22 @@ class Timer: NSObject {
     }
     
     func secondTick() {
-        seconds--
-        NSNotificationCenter.defaultCenter().postNotificationName(Timer.notificationSecondTick, object: self)
-        if seconds <= 0 {
-            stopTimer()
-            NSNotificationCenter.defaultCenter().postNotificationName(Timer.notificationComplete, object: self)
+        if !isPaused {
+            seconds--
+            NSNotificationCenter.defaultCenter().postNotificationName(Timer.notificationSecondTick, object: self)
+            if seconds <= 0 {
+                stopTimer()
+                NSNotificationCenter.defaultCenter().postNotificationName(Timer.notificationComplete, object: self)
+            }
+        }
+    }
+    
+    func pause() {
+        if isPaused {
+            isPaused = false
+        } else {
+            isPaused = true
         }
     }
 }
+
