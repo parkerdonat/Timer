@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RBv-4g-FgC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RBv-4g-FgC">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -183,9 +183,66 @@
                     <view key="view" contentMode="scaleToFill" id="ZKn-BE-cym">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tDE-RM-lfw">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ajH-kZ-ARo">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="266"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="476839342.027996">
+                                            <!--2016-02-10 23:22:22 +0000-->
+                                        </date>
+                                    </datePicker>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BYQ-OF-vwP">
+                                        <rect key="frame" x="0.0" y="266" width="600" height="44"/>
+                                        <color key="backgroundColor" red="0.2247350726" green="0.90060763889999995" blue="0.50196022039999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hA5-NP-vkB">
+                                        <rect key="frame" x="0.0" y="310" width="600" height="44"/>
+                                        <color key="backgroundColor" red="0.2247350726" green="0.90060763889999995" blue="0.50196022039999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uC5-xw-BYC">
+                                        <rect key="frame" x="0.0" y="354" width="600" height="44"/>
+                                        <color key="backgroundColor" red="0.2247350726" green="0.90060763889999995" blue="0.50196022039999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pys-tN-vuy">
+                                        <rect key="frame" x="0.0" y="398" width="600" height="89"/>
+                                        <color key="backgroundColor" red="0.2247350726" green="0.90060763889999995" blue="0.50196022039999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Canel Alarm"/>
+                                        <connections>
+                                            <action selector="alarmButtonTapped:" destination="CEm-EK-ldb" eventType="touchUpInside" id="dW0-aP-pDn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="BYQ-OF-vwP" firstAttribute="height" secondItem="hA5-NP-vkB" secondAttribute="height" id="7E3-Kt-0tz"/>
+                                    <constraint firstItem="pys-tN-vuy" firstAttribute="height" secondItem="ajH-kZ-ARo" secondAttribute="height" multiplier="1 / 3" id="Onk-zT-3dg"/>
+                                    <constraint firstItem="uC5-xw-BYC" firstAttribute="height" secondItem="hA5-NP-vkB" secondAttribute="height" id="YAe-oQ-6A9"/>
+                                    <constraint firstItem="uC5-xw-BYC" firstAttribute="height" secondItem="pys-tN-vuy" secondAttribute="height" multiplier="1/2" id="c5Y-fQ-gVc"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2247350726" green="0.90060763889999995" blue="0.50196022039999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="tDE-RM-lfw" firstAttribute="top" secondItem="pKS-87-Jh5" secondAttribute="bottom" id="2Ic-a5-hhj"/>
+                            <constraint firstItem="tDE-RM-lfw" firstAttribute="bottom" secondItem="0E6-D6-zVd" secondAttribute="top" id="J6e-MU-Fkq"/>
+                            <constraint firstAttribute="trailing" secondItem="tDE-RM-lfw" secondAttribute="trailing" id="qZv-cc-xQr"/>
+                            <constraint firstItem="tDE-RM-lfw" firstAttribute="leading" secondItem="ZKn-BE-cym" secondAttribute="leading" id="zYm-gC-q81"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="11D-lZ-ZsP"/>
+                    <connections>
+                        <outlet property="alarmButton" destination="pys-tN-vuy" id="HcO-RH-Wbe"/>
+                        <outlet property="dateLabel" destination="uC5-xw-BYC" id="ttw-It-on6"/>
+                        <outlet property="datePicker" destination="ajH-kZ-ARo" id="igd-uH-Mzl"/>
+                        <outlet property="messageLabel" destination="hA5-NP-vkB" id="dMR-YD-QuJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vsE-UK-CNi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

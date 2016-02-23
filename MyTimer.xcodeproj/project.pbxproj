@@ -17,6 +17,7 @@
 		39192EE11C6AFE0B0045F634 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39192EE01C6AFE0B0045F634 /* Timer.swift */; };
 		39192EE31C6AFE210045F634 /* AppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39192EE21C6AFE210045F634 /* AppearanceController.swift */; };
 		39192EE51C6AFE320045F634 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39192EE41C6AFE320045F634 /* Colors.swift */; };
+		DDCDC51A1C6BF2C000F57C0C /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCDC5191C6BF2C000F57C0C /* Alarm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		39192EE01C6AFE0B0045F634 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		39192EE21C6AFE210045F634 /* AppearanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceController.swift; sourceTree = "<group>"; };
 		39192EE41C6AFE320045F634 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		DDCDC5191C6BF2C000F57C0C /* Alarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				39192EC31C6AD6280045F634 /* Assets.xcassets */,
 				39192EE21C6AFE210045F634 /* AppearanceController.swift */,
 				39192EE01C6AFE0B0045F634 /* Timer.swift */,
+				DDCDC5191C6BF2C000F57C0C /* Alarm.swift */,
 				39192EC01C6AD6280045F634 /* Main.storyboard */,
 				39192EDE1C6AD7580045F634 /* AlarmViewController.swift */,
 				39192EDC1C6AD74E0045F634 /* TimerViewController.swift */,
@@ -214,6 +217,7 @@
 				39192EBD1C6AD6280045F634 /* AppDelegate.swift in Sources */,
 				39192EDF1C6AD7580045F634 /* AlarmViewController.swift in Sources */,
 				39192EE11C6AFE0B0045F634 /* Timer.swift in Sources */,
+				DDCDC51A1C6BF2C000F57C0C /* Alarm.swift in Sources */,
 				39192EE31C6AFE210045F634 /* AppearanceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +406,7 @@
 				39192ED81C6AD6280045F634 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39192ED91C6AD6280045F634 /* Build configuration list for PBXNativeTarget "MyTimerTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +415,7 @@
 				39192EDB1C6AD6280045F634 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
