@@ -11,8 +11,13 @@
 		01A6AB461BD55A8600293874 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01A6AB441BD55A8600293874 /* LaunchScreen.storyboard */; };
 		01A6AB511BD55A8600293874 /* TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A6AB501BD55A8600293874 /* TimerTests.swift */; };
 		01A6AB5C1BD55A8600293874 /* TimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A6AB5B1BD55A8600293874 /* TimerUITests.swift */; };
-		01A6AB6A1BD55B1800293874 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A6AB691BD55B1800293874 /* AppDelegate.swift */; settings = {ASSET_TAGS = (); }; };
-		01A6AB6C1BD55B4500293874 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01A6AB6B1BD55B4500293874 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		01A6AB6A1BD55B1800293874 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A6AB691BD55B1800293874 /* AppDelegate.swift */; };
+		01A6AB6C1BD55B4500293874 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01A6AB6B1BD55B4500293874 /* Main.storyboard */; };
+		DDB01B081CBC2FC700C91E4D /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB01B071CBC2FC700C91E4D /* TimerViewController.swift */; };
+		DDB01B0A1CBC41C900C91E4D /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB01B091CBC41C900C91E4D /* AlarmViewController.swift */; };
+		DDB01B0C1CBC439B00C91E4D /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB01B0B1CBC439B00C91E4D /* Timer.swift */; };
+		DDB01B101CBC5C9800C91E4D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB01B0F1CBC5C9800C91E4D /* Colors.swift */; };
+		DDB01B121CBC5CF000C91E4D /* AppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB01B111CBC5CF000C91E4D /* AppearanceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		01A6AB5D1BD55A8600293874 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01A6AB691BD55B1800293874 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01A6AB6B1BD55B4500293874 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DDB01B071CBC2FC700C91E4D /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		DDB01B091CBC41C900C91E4D /* AlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
+		DDB01B0B1CBC439B00C91E4D /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		DDB01B0F1CBC5C9800C91E4D /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		DDB01B111CBC5CF000C91E4D /* AppearanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +106,11 @@
 			isa = PBXGroup;
 			children = (
 				01A6AB691BD55B1800293874 /* AppDelegate.swift */,
+				DDB01B071CBC2FC700C91E4D /* TimerViewController.swift */,
+				DDB01B091CBC41C900C91E4D /* AlarmViewController.swift */,
+				DDB01B0B1CBC439B00C91E4D /* Timer.swift */,
+				DDB01B0F1CBC5C9800C91E4D /* Colors.swift */,
+				DDB01B111CBC5CF000C91E4D /* AppearanceController.swift */,
 				01A6AB421BD55A8600293874 /* Assets.xcassets */,
 				01A6AB6B1BD55B4500293874 /* Main.storyboard */,
 				01A6AB441BD55A8600293874 /* LaunchScreen.storyboard */,
@@ -253,7 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDB01B081CBC2FC700C91E4D /* TimerViewController.swift in Sources */,
+				DDB01B121CBC5CF000C91E4D /* AppearanceController.swift in Sources */,
+				DDB01B101CBC5C9800C91E4D /* Colors.swift in Sources */,
 				01A6AB6A1BD55B1800293874 /* AppDelegate.swift in Sources */,
+				DDB01B0A1CBC41C900C91E4D /* AlarmViewController.swift in Sources */,
+				DDB01B0C1CBC439B00C91E4D /* Timer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
