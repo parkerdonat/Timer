@@ -18,6 +18,7 @@
 		DDB01B0C1CBC439B00C91E4D /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB01B0B1CBC439B00C91E4D /* Timer.swift */; };
 		DDB01B101CBC5C9800C91E4D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB01B0F1CBC5C9800C91E4D /* Colors.swift */; };
 		DDB01B121CBC5CF000C91E4D /* AppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB01B111CBC5CF000C91E4D /* AppearanceController.swift */; };
+		DDC72A271CBD8BB300EA7439 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC72A261CBD8BB300EA7439 /* Alarm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		DDB01B0B1CBC439B00C91E4D /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		DDB01B0F1CBC5C9800C91E4D /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		DDB01B111CBC5CF000C91E4D /* AppearanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceController.swift; sourceTree = "<group>"; };
+		DDC72A261CBD8BB300EA7439 /* Alarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				DDB01B071CBC2FC700C91E4D /* TimerViewController.swift */,
 				DDB01B091CBC41C900C91E4D /* AlarmViewController.swift */,
 				DDB01B0B1CBC439B00C91E4D /* Timer.swift */,
+				DDC72A261CBD8BB300EA7439 /* Alarm.swift */,
 				DDB01B0F1CBC5C9800C91E4D /* Colors.swift */,
 				DDB01B111CBC5CF000C91E4D /* AppearanceController.swift */,
 				01A6AB421BD55A8600293874 /* Assets.xcassets */,
@@ -273,6 +276,7 @@
 				DDB01B101CBC5C9800C91E4D /* Colors.swift in Sources */,
 				01A6AB6A1BD55B1800293874 /* AppDelegate.swift in Sources */,
 				DDB01B0A1CBC41C900C91E4D /* AlarmViewController.swift in Sources */,
+				DDC72A271CBD8BB300EA7439 /* Alarm.swift in Sources */,
 				DDB01B0C1CBC439B00C91E4D /* Timer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
