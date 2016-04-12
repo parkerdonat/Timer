@@ -32,13 +32,15 @@ class TimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         
         pauseButton.layer.cornerRadius = pauseButton.bounds.height / 2
         pauseButton.layer.masksToBounds = true
-        pauseButton.layer.borderWidth = 2.0
-        //pauseButton.layer.borderColor = UIColor.blueColorTimer().CGColor
+        pauseButton.layer.borderWidth = 3.0
+        pauseButton.layer.borderColor = UIColor.greenColorTimer().CGColor
+        pauseButton.layer.backgroundColor = UIColor.greenColorTimer().CGColor
         
         startButton.layer.cornerRadius = startButton.bounds.height / 2
         startButton.layer.masksToBounds = true
-        startButton.layer.borderWidth = 2.0
-        //startButton.layer.borderColor = UIColor.lightBlueColorTimer().CGColor
+        startButton.layer.borderWidth = 3.0
+        startButton.layer.borderColor = UIColor.greenColorTimer().CGColor
+        startButton.layer.backgroundColor = UIColor.greenColorTimer().CGColor
     }
 
     @IBAction func pauseButtonTapped(sender: AnyObject) {
@@ -75,6 +77,7 @@ class TimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return "\(row)"
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -131,10 +134,12 @@ class TimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         pickerStackView.hidden = true
         startButton.setTitle("Cancel", forState: .Normal)
         
-//        startButton.setTitleColor(UIColor.blueColorTimer(), forState: .Normal)
-//        startButton.layer.borderColor = UIColor.blueColorTimer().CGColor
-//        pauseButton.setTitleColor(UIColor.lightBlueColorTimer(), forState: .Normal)
-//        pauseButton.layer.borderColor = UIColor.lightBlueColorTimer().CGColor
+        startButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        startButton.layer.borderColor = UIColor.whiteColor().CGColor
+        startButton.layer.backgroundColor = UIColor.lightBlueColorTimer().CGColor
+        pauseButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        pauseButton.layer.borderColor = UIColor.whiteColor().CGColor
+        pauseButton.layer.backgroundColor = UIColor.lightBlueColorTimer().CGColor
         
     }
     
@@ -144,10 +149,13 @@ class TimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         progressView.hidden = true
         startButton.setTitle("Start", forState: .Normal)
         
-//        startButton.setTitleColor(UIColor.lightBlueColorTimer(), forState: .Normal)
-//        startButton.layer.borderColor = UIColor.lightBlueColorTimer().CGColor
-//        pauseButton.setTitleColor(UIColor.blueColorTimer(), forState: .Normal)
-//        pauseButton.layer.borderColor = UIColor.blueColorTimer().CGColor
+        startButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        startButton.layer.borderColor = UIColor.greenColorTimer().CGColor
+        startButton.layer.backgroundColor = UIColor.greenColorTimer().CGColor
+        pauseButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        pauseButton.layer.borderColor = UIColor.greenColorTimer().CGColor
+        pauseButton.layer.backgroundColor = UIColor.greenColorTimer().CGColor
+
     }
     
 

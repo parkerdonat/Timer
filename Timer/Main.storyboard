@@ -23,62 +23,70 @@
                                 <subviews>
                                     <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="efb-fg-Abe">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="0.0"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <color key="tintColor" red="0.36078431370000003" green="0.64313725489999995" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
                                     </progressView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7UE-gi-gG0" userLabel="TopView">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="238"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="216"/>
                                         <subviews>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHk-5T-qaK">
-                                                <rect key="frame" x="8" y="0.0" width="584" height="238"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="80"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="238"/>
+                                                <color key="backgroundColor" red="0.23137254900000001" green="0.23137254900000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="90"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JTG-ry-fQK" userLabel="PickerStackView">
-                                                <rect key="frame" x="8" y="0.0" width="592" height="238"/>
+                                                <rect key="frame" x="8" y="0.0" width="592" height="216"/>
                                                 <subviews>
                                                     <pickerView contentMode="scaleToFill" horizontalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="EL3-Hi-GdV" userLabel="HoursPicker View">
-                                                        <rect key="frame" x="0.0" y="0.0" width="243" height="238"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="250" height="216"/>
                                                         <connections>
                                                             <outlet property="dataSource" destination="vq3-d3-6ID" id="e2G-hD-xmT"/>
                                                             <outlet property="delegate" destination="vq3-d3-6ID" id="fbZ-Pw-NjJ"/>
                                                         </connections>
                                                     </pickerView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7G-Uj-Doo">
-                                                        <rect key="frame" x="243" y="0.0" width="46" height="238"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <rect key="frame" x="250" y="0.0" width="41" height="216"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="17"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SuN-pB-Rzw" userLabel="MinutesPicker View">
-                                                        <rect key="frame" x="289" y="0.0" width="242" height="238"/>
+                                                        <rect key="frame" x="291" y="0.0" width="248" height="216"/>
                                                         <connections>
                                                             <outlet property="dataSource" destination="vq3-d3-6ID" id="BHz-pn-7qb"/>
                                                             <outlet property="delegate" destination="vq3-d3-6ID" id="poY-pd-Ozi"/>
                                                         </connections>
                                                     </pickerView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vlv-mN-R2D">
-                                                        <rect key="frame" x="531" y="0.0" width="61" height="238"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <rect key="frame" x="539" y="0.0" width="53" height="216"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
+                                                <color key="backgroundColor" red="0.23137254900000001" green="0.23137254900000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstItem="EL3-Hi-GdV" firstAttribute="width" secondItem="SuN-pB-Rzw" secondAttribute="width" constant="1" id="pgN-bY-QLU"/>
+                                                    <constraint firstItem="EL3-Hi-GdV" firstAttribute="width" secondItem="SuN-pB-Rzw" secondAttribute="width" constant="2" id="pgN-bY-QLU"/>
                                                 </constraints>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.23137254900000001" green="0.23137254900000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstItem="QHk-5T-qaK" firstAttribute="leading" secondItem="JTG-ry-fQK" secondAttribute="leading" id="4it-KO-ZgG"/>
+                                            <constraint firstItem="QHk-5T-qaK" firstAttribute="leading" secondItem="JTG-ry-fQK" secondAttribute="leading" constant="-8" id="4it-KO-ZgG"/>
                                             <constraint firstItem="JTG-ry-fQK" firstAttribute="leading" secondItem="7UE-gi-gG0" secondAttribute="leading" constant="8" id="9FL-cx-j9a"/>
                                             <constraint firstItem="QHk-5T-qaK" firstAttribute="top" secondItem="JTG-ry-fQK" secondAttribute="top" id="Lj1-J8-nAl"/>
-                                            <constraint firstItem="QHk-5T-qaK" firstAttribute="trailing" secondItem="7UE-gi-gG0" secondAttribute="trailingMargin" id="NU4-MF-LbJ"/>
+                                            <constraint firstItem="QHk-5T-qaK" firstAttribute="trailing" secondItem="7UE-gi-gG0" secondAttribute="trailingMargin" constant="8" id="NU4-MF-LbJ"/>
                                             <constraint firstAttribute="bottom" secondItem="JTG-ry-fQK" secondAttribute="bottom" id="UUr-41-zq2"/>
-                                            <constraint firstItem="QHk-5T-qaK" firstAttribute="bottom" secondItem="JTG-ry-fQK" secondAttribute="bottom" id="mqR-i2-ioj"/>
+                                            <constraint firstItem="QHk-5T-qaK" firstAttribute="bottom" secondItem="JTG-ry-fQK" secondAttribute="bottom" constant="22" id="mqR-i2-ioj"/>
                                             <constraint firstItem="JTG-ry-fQK" firstAttribute="top" secondItem="7UE-gi-gG0" secondAttribute="top" id="qpg-xP-gg0"/>
                                             <constraint firstAttribute="trailing" secondItem="JTG-ry-fQK" secondAttribute="trailing" id="vz3-cz-z7d"/>
                                         </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="An6-mU-she">
+                                        <rect key="frame" x="0.0" y="216" width="600" height="22"/>
+                                        <color key="backgroundColor" red="0.23137254900000001" green="0.23137254900000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RKO-Ei-jOn" userLabel="MiddleView">
                                         <rect key="frame" x="0.0" y="238" width="600" height="150"/>
@@ -88,22 +96,30 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rB1-u4-rot">
                                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                        <color key="backgroundColor" red="0.36078431372549019" green="0.70588235294117641" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="150" id="oY7-hi-BLm"/>
                                                             <constraint firstAttribute="width" secondItem="rB1-u4-rot" secondAttribute="height" multiplier="1:1" id="pkn-Vg-rHK"/>
                                                         </constraints>
-                                                        <state key="normal" title="Pause"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="30"/>
+                                                        <state key="normal" title="Pause">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="pauseButtonTapped:" destination="vq3-d3-6ID" eventType="touchUpInside" id="VZb-78-cMw"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vqb-1I-Iml">
                                                         <rect key="frame" x="205" y="0.0" width="150" height="150"/>
+                                                        <color key="backgroundColor" red="0.36078431370000003" green="0.70588235290000001" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Vqb-1I-Iml" secondAttribute="height" multiplier="1:1" id="5kg-ua-buq"/>
                                                             <constraint firstAttribute="width" constant="150" id="uOw-0a-zHX"/>
                                                         </constraints>
-                                                        <state key="normal" title="Start"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="30"/>
+                                                        <state key="normal" title="Start">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="starButtonTapped:" destination="vq3-d3-6ID" eventType="touchUpInside" id="gLR-mx-seh"/>
                                                         </connections>
@@ -111,7 +127,7 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.23137254900000001" green="0.23137254900000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="eka-y6-VDi" firstAttribute="centerX" secondItem="RKO-Ei-jOn" secondAttribute="centerX" id="PjN-Nd-qlT"/>
                                             <constraint firstAttribute="bottom" secondItem="eka-y6-VDi" secondAttribute="bottom" id="qkC-yd-Aby"/>
@@ -120,7 +136,7 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6jT-ar-w2M">
                                         <rect key="frame" x="0.0" y="388" width="600" height="99"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.23137254901960785" green="0.23137254901960785" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -155,7 +171,7 @@
         <scene sceneID="npR-eQ-1Og">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="y9q-JG-JsU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Timer" id="xOq-a4-EwZ"/>
+                    <tabBarItem key="tabBarItem" title="Timer" image="stopwatch" id="xOq-a4-EwZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gYQ-xb-jx9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -211,7 +227,7 @@
         <scene sceneID="w7t-HV-Qip">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1nX-Ar-oJ5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Alarm" id="6JS-6r-2c7"/>
+                    <tabBarItem key="tabBarItem" title="Alarm" image="alarmclock" id="6JS-6r-2c7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NL2-cH-3UF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -227,4 +243,8 @@
             <point key="canvasLocation" x="1279" y="1138"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="alarmclock" width="32" height="32"/>
+        <image name="stopwatch" width="32" height="32"/>
+    </resources>
 </document>

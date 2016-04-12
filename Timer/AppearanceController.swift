@@ -7,16 +7,22 @@
 //
 
 import Foundation
+import UIKit
 
 class AppearanceController {
     
     static func initializeAppearance() {
+        
         //Set colors for entire app.
-//        UINavigationBar.appearance().barTintColor = UIColor.orangeColorTimer()
-//        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
-//        UITabBar.appearance().barTintColor = UIColor.blueColorTimer()
-//        UITabBar.appearance().tintColor = UIColor.lightBlueColorTimer()
-//        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.whiteColor()], forState: .Normal)
-//        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.lightBlueColorTimer()], forState: .Selected)
+        UINavigationBar.appearance().barTintColor = UIColor.darkGreyColorTimer()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+//        if let font = UIFont(name: "HelveticaNeue-UltraLight", size: 20) {
+//            UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: font]
+//        }
+        UITabBar.appearance().barTintColor = UIColor.darkGreyColorTimer()
+        UITabBar.appearance().tintColor = UIColor.lightBlueColorTimer()
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.lightBlueColorTimer()], forState: .Selected)
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.lightGrayColor()], forState: .Normal)
+        
     }
 }
